@@ -20,6 +20,11 @@ body {
 .site-container {
   margin: 0 1.125em 2em;
 }
+    @media (min-width: 480px) {
+      .site-container {
+        margin: 0 2.75em 2em;
+      }
+    }
 
     @media (min-width: 768px) {
       .site-container {
@@ -69,6 +74,7 @@ a {
   font-weight: 600;
   color: #70C1B3;
 }
+
 .site-links__item:hover {
   border-bottom: .08em solid #70C1B3;
 }
