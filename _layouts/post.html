@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <time class="post__time" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | localize: ":long" }}</time>
+  <h2 class="post__title" itemprop="headline name">{{ page.title }}</h2>
+  {% if page.author %}
+  <div class="post__author">פורסם ע״י <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span> ב<a href="#">מעקב פיתוח</a></div>
+  {% endif %}
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>

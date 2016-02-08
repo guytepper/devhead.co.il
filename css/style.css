@@ -1,0 +1,179 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font: 17px/1.6 'Open Sans Hebrew', Arial, sans-serif;
+}
+
+    @media (min-width: 768px) {
+      body {
+        font-size: 18px;
+        line-height: 1.7;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      body {
+        font-size: 20px;
+      }
+    }
+
+.site-container {
+  margin: 0 1.125em 2em;
+}
+
+    @media (min-width: 768px) {
+      .site-container {
+        margin: 0 auto 2em;
+        max-width: 40rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .site-container {
+        max-width: 42.5rem;
+      }
+    }
+
+    @media (min-width: 1441px) {
+      .site-container {
+        max-width: 47.5rem;
+      }
+    }
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em 0;
+  padding-bottom: 0.625em;
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.site-logo {
+  width: 550px; /* Wraps site-links to new line */
+  margin: 0;
+  font: 1.875em/1.5 'Courier New';
+  color: #247BA0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-links {
+  line-height: 2;
+}
+
+.site-links__item {
+  font-weight: 600;
+  color: #70C1B3;
+}
+.site-links__item:hover {
+  border-bottom: .08em solid #70C1B3;
+}
+
+.posts {
+  margin-right: -2em;
+  list-style: none;
+}
+
+.list-item {
+  margin-left: 10px;
+}
+
+.post-link {
+  vertical-align: middle;
+}
+
+.content a {
+  color: #4A90E2;
+}
+
+.content a:hover {
+  border-bottom: .06em solid #4A90E2;
+}
+
+.post__time {
+  font-weight: 300;
+}
+
+.post__title {
+  margin: 0;
+  font-size: 1.625em;
+}
+
+.post__author {
+  font-weight: 600;
+}
+
+.post img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border: 2px solid #E8E8E8
+}
+
+.post__note {
+  padding: 0.0625em 1em;
+  background-color: #FDFAD0;
+}
+
+.post__note img {
+  border: none;
+}
+
+h3 {
+  font-size: 1.475em;
+}
+
+pre {
+  padding: 1em;
+  margin: .5em 0;
+  direction: ltr;
+  background-color: #f5f2f0;
+}
+
+code {
+  padding: .2em;
+  border-radius: .3em;
+  background: #f5f2f0;
+}
+
+code.highlighter-rouge {
+  color: #905;
+}
+
+pre code {
+  padding: 0;
+  line-height: 1.5;
+}
+
+.anchor-highlight:target {
+  padding-top: 50px;
+  /*margin-top: -50px;*/
+  animation: highlight 5s ease;
+  border-bottom: 0.15em solid #F25F5C
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  padding: .5em 1em;
+  color: #999;
+  font-size: .8em;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+}
+
+@keyframes highlight {
+  0% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
+}
