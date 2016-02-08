@@ -34,7 +34,7 @@ body {
       }
     }
 
-    @media (min-width: 1441px) {
+    @media (min-width: 1441px) {gi
       .site-container {
         max-width: 47.5rem;
       }
