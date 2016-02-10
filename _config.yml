@@ -6,12 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: דברים של גברים
+title: ראש פיתוח
 email: guytepper@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  זה בעצם דברים של גיא.
+description: בלוג על נושאים שונים הקשורים בפיתוח אינטרנט.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://guystuff.co.il" # the base hostname & protocol for your site
+url: "http://devhead.co.il" # the base hostname & protocol for your site
 twitter_username: guytepper
 github_username:  guytepper
 

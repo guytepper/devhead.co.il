@@ -4,14 +4,12 @@ layout: default
     <ul class="posts">
       {% for post in site.posts %}
       <li>
-      <span class="list-item">⚧</span>
-      <!-- <time class="post__time" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | localize: ":long" }}</time> -->
+      <span class="list-item">⭐️</span>
       <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
         {{ post.title }}
       </a>
       </li>
     </ul>
     {% endfor %}
-  </ul>
 
 </div>
