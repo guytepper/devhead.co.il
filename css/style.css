@@ -84,7 +84,8 @@ a {
   list-style: none;
 }
 
-.list-item {
+.list-item:before {
+  content: "⭐️";
   margin-left: 5px;
 }
 
