@@ -56,7 +56,7 @@ body {
 }
 
 .site-logo {
-  min-width: 300px; /* Wraps site-links to new line */
+  min-width: 18.75rem; /* Wraps site-links to new line */
   margin: 0;
   font: 1.875em/1.5 'Courier New';
   color: #247BA0;
@@ -86,7 +86,11 @@ a {
 
 .list-item:before {
   content: "⭐️";
-  margin-left: 5px;
+  margin-left: 0.3125em;
+}
+
+.list-item {
+  margin-top: 0.3125em;
 }
 
 .content a {
@@ -112,7 +116,7 @@ a {
 
 .post img {
   display: block;
-  margin: 10px auto;
+  margin: 0.625em auto;
   max-width: 100%;
   border: 2px solid #E8E8E8
 }
@@ -153,10 +157,9 @@ pre code {
 }
 
 .anchor-highlight:target {
-  padding-top: 50px;
-  /*margin-top: -50px;*/
-  animation: highlight 5s ease;
+  padding-top: 3.125em;
   border-bottom: 0.15em solid #F25F5C
+  animation: highlight 5s ease;
 }
 
 figure {
