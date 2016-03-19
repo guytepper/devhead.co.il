@@ -46,9 +46,17 @@ body {
     }
 
 .site-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 1.5em 0;
   padding-bottom: 0.625em;
@@ -134,11 +142,21 @@ h3 {
   font-size: 1.475em;
 }
 
+code,
+pre {
+  white-space: pre-wrap;
+}
+
 pre {
   padding: 1em;
   margin: .5em 0;
   direction: ltr;
   background-color: #f5f2f0;
+}
+
+td pre {
+    padding: 0;
+    margin: 0;
 }
 
 code {
@@ -156,9 +174,17 @@ pre code {
   line-height: 1.5;
 }
 
+.lineno {
+  margin-right: 1em;
+  padding-right: .4em;
+  color: #888888;
+  border-right: 1px solid rgba(128, 128, 128, 0.21);
+}
+
 .anchor-highlight:target {
   padding-top: 3.125em;
   border-bottom: 0.15em solid #F25F5C;
+  -webkit-animation: highlight 5s ease;
   animation: highlight 5s ease;
 }
 
@@ -173,6 +199,15 @@ figcaption {
   font-weight: 100;
   font-style: italic;
   text-align: center;
+}
+
+@-webkit-keyframes highlight {
+  0% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
 }
 
 @keyframes highlight {
