@@ -142,11 +142,21 @@ h3 {
   font-size: 1.475em;
 }
 
+code,
+pre {
+  white-space: pre-wrap;
+}
+
 pre {
   padding: 1em;
   margin: .5em 0;
   direction: ltr;
   background-color: #f5f2f0;
+}
+
+td pre {
+    padding: 0;
+    margin: 0;
 }
 
 code {
@@ -162,6 +172,13 @@ code.highlighter-rouge {
 pre code {
   padding: 0;
   line-height: 1.5;
+}
+
+.lineno {
+  margin-right: 1em;
+  padding-right: .4em;
+  color: #888888;
+  border-right: 1px solid rgba(128, 128, 128, 0.21);
 }
 
 .anchor-highlight:target {
