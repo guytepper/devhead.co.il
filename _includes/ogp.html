@@ -1,0 +1,16 @@
+
+{% if page.title %}
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="{{ page.title }}" />
+  {% if page.excerpt %}
+  <meta property="og:description" content="{{ page.excerpt }}" />
+  {% endif %}
+{% else %}
+	<meta property="og:type" content="website" />
+{% endif %}
+
+{% include meta.html property="og:site_name" content=site.title %}
+{% include meta.html property="og:image" content=page.thumbnail %}
+
+{% capture page_url %}{{ page.url | replace:'/index.html','/' | prepend: site.url }}{% endcapture %}
+{% include meta.html property="og:url" content=page_url %}
