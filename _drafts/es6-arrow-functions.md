@@ -1,3 +1,9 @@
+---
+layout: post
+title: ES6 - Arrow Functions
+excerpt: soon
+---
+
 פיצ׳ר שנמצא בשימוש רחב בג׳אווהסקריפט הוא האפשרות לכתוב פונקציות בכל מקום שנרצה. לדוגמה, הפונקציה `Array.filter` שלוקחת פונקציה כפרמטר ומפעילה אותה על כל אלמנט במערך:
 
 {% highlight javascript %}
@@ -62,9 +68,21 @@ button.addEventListener('click', event => {
 
 נוסף לשינוי צורת הכתיבה של Arrow Functions מפונקציות אנונימיות רגילות, ישנו שינוי התנהגות משמעותי.
 
-ב- JavaScri[t, הערך של `this` משתנה בהתאם למקום ממנו הוא נקרא ובצורה בה הוא נקרא (מידע על כך תוכלו למצוא כאן -> לינק לפוסט בmdn).  
+ב- JavaScript, הערך של `this` משתנה בהתאם למקום ממנו הוא נקרא ובצורה בה הוא נקרא (מידע נוסף על כך תוכלו למצוא [כאן](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)).  
 עד כה, כאשר היינו יוצרים פונקציות, הפונקציה שנוצרה הייתה יוצרת תחום חדש, ומבדילה את עצמה מהקונטקסט ממנה היא נקראה. לדוגמה:
 
-Arrow Functions, לעומת זאת, אינם מבדילים את עצמם מהקונטקסט בו הם נמצאים ואינם יוצרים ערך `this` חדש .   
-כתוצאה מכך, אין צורך יותר לחשוב על מה יהיה הערך של `this` כשנשתמש בפונקציה, ופשוט לכתוב פונקציות כמו שהיינו כותבים משפטי `if-else` או `switch` מבלי לחשוש על מה יהיה ערך ה- `this` בתוכם.
+{% highlight javascript %}
+function Counter() {
+  this.seconds = 0;
 
+  setInterval(function() { // New anonymous function
+    this.seconds++; // What's seconds? S:
+    console.log(seconds); // NaN
+  }, 1000);
+}
+
+var myCounter = new Counter();
+{% endhighlight %}
+
+Arrow Functions, לעומת זאת, אינם מבדילים את עצמם מהקונטקסט בו הם נמצאים ואינם יוצרים ערך `this` חדש .   
+כתוצאה מכך, אין צורך יותר לחשוב על מה יהיה הערך של `this` כשנשתמש בפונקציה, ופשוט לכתוב פונקציות כמו שהיינו כותבים משפטי `if-else` או `switch` מבלי לחשוש על ערך ה- `this` בתוכם.
