@@ -1,89 +1,12 @@
-<!DOCTYPE html>
-<html dir="rtl">
-
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>ראש פיתוח</title>
-  <meta name="description" content="בלוג על נושאים שונים הקשורים בפיתוח אינטרנט.">
-
-  <link rel="stylesheet" href="/css/style.css">
-  
-  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/opensanshebrew.css">
-
-  <link rel="canonical" href="http://devhead.co.il/">
-  <link rel="alternate" type="application/rss+xml" title="ראש פיתוח" href="http://devhead.co.il/feed.xml">
-  
-
-	<meta property="og:type" content="website" />
-
-
-
-  <meta property="og:site_name" content="ראש פיתוח" />
-
-
-
-
-
-
-
-  <meta property="og:url" content="http://devhead.co.il/" />
-
-
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-18040964-6', 'auto');
-    ga('send', 'pageview');
-  </script>
-</head>
-
-
-  <body>
-    <div class="site-container">
-
-    <header class="site-header">
-  <a href="/"><h1 class="site-logo">ראש פיתוח</h1></a>
-  <nav class="site-links">
-    <a href="/about" class="site-links__item">אודות</a>
-  </nav>
-</header>
-
-
-    <div class="content">
-          <ul class="posts">
-      
-      <li class="list-item">
-        <a href="/javascript-variable-scope" class="post-link">
-          JavaScript - תחומים ונהנים
-        </a>
-      </li>
-      
-      <li class="list-item">
-        <a href="/flexbox-part-2" class="post-link">
-          Flexbox - מדריך למתחילים - חלק ב׳
-        </a>
-      </li>
-      
-      <li class="list-item">
-        <a href="/flexbox-part-1" class="post-link">
-          Flexbox - מדריך למתחילים - חלק א׳
-        </a>
-      </li>
-      
-    </ul>
-
-
-</div>
-
-    </div>
-
-    </div>
-  </body>
-
-</html>
+---
+layout: default
+---
+<ul class="posts">
+  {% for post in site.posts %}
+  <li class="list-item">
+    <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
