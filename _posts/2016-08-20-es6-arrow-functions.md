@@ -13,8 +13,8 @@ var people = [
   { name: 'Dorit', age: 8 },
 ]
 
-var grownUps = people.filter(function(person) {
-  return person.age > 18;
+var grownUps = people.filter(function(p) {
+  return p.age > 18;
 });
 {% endhighlight %}
 
@@ -34,7 +34,20 @@ var grownUps = people.filter(p => p.age > 18);
 
 כאשר אנו כותבים פונקציות קצרות אשר מקבלות פרמטר אחד, כוללות ביטוי אחד ומחזירות ערך כלשהוא, צורת הכתיבה תהיה `פרמטר => ביטוי`. אין צורך ב- `function`, בסוגריים מסולסלות וב- `return` לפני הביטוי.
 
-אם נרצה להעביר 2 פרמטרים לפונקציה, נצטרך לעטוף אותם בסוגריים:
+אם אנו מעבירים יותר מפרמטר אחד לפונקציה, או לא מעבירים פרמטרים בכלל, נצטרך להוסיף סוגריים בתחילת הפונקציה. כך נכתוב פונקציה שלא מועברים אליה פרמטרים:
+
+{% highlight javascript %}
+// ES5
+setTimeout(function() {
+    alert('Suprise!');
+  }, 100);
+
+// ES6
+setTimeout(() => alert('Suprise!'), 100);
+{% endhighlight %}
+
+
+וכך נכתוב פונקציה שמועברים אליה מספר פרמטרים:
 
 {% highlight javascript %}
 var numbers = [1, 2, 3];
@@ -48,7 +61,7 @@ numbers.reduce(function(a, b) {
 numbers.reduce((a, b) => a + b);
 {% endhighlight %}
 
-ואם נרצה לכתוב פונקציה עם יותר משורת קוד אחת, נכתוב אותה כך:
+אם נרצה לכתוב פונקציה עם יותר משורת קוד אחת, נכתוב אותה כך:
 
 {% highlight javascript %}
 // ES5
