@@ -13,8 +13,8 @@ var people = [
   { name: 'Dorit', age: 8 },
 ]
 
-var grownUps = people.filter(function(person) {
-  return person.age > 18;
+var grownUps = people.filter(function(p) {
+  return p.age > 18;
 });
 {% endhighlight %}
 
