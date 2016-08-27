@@ -17,4 +17,4 @@ install:
 
 script:
   - jekyll build
-  - htmlproofer ./_site --disable-external --assume-extension --empty_alt_ignore
+  - htmlproofer ./_site --disable-external --assume-extension --empty-alt-ignore
