@@ -37,9 +37,12 @@ Flexbox פותר הרבה מהבעיות שאנחנו נתקלים בהן מדי
 <p>
 שינוי הכיוון ישנה גם את ה<strong id="main-axis" class="anchor-highlight">"ציר הראשי"</strong> (main axis) ו<strong id="cross-axis" class="anchor-highlight">"הציר המשני"</strong> (cross axis) שבו פלקסבוקס עובד. כאשר הכיוון מוגדר כ-<code class="highlighter-rouge">row</code>, הציר הראשי יהיה מימין לשמאל (אם אנחנו עובדים בעברית) והציר המשני יהיה מלמעלה למטה. אם נשנה את הכיוון ל-<code class="highlighter-rouge">column</code> זה יתהפך - הציר הראשי יהיה מלמעלה למטה והציר המשני מימין לשמאל.
 </p>
+
 <figure>
-<a href="/images/flexbox-illu.svg" target="_blank"><img src="/images/flexbox-illu.svg"></a>
-<figcaption>האנטומיה של פלקסבוקס, כאשר flex-direction: row</figcaption>
+  <a href="/images/flexbox-illu.svg" target="_blank">
+    <img src="/images/flexbox-illu.svg" alt="">
+  </a>
+  <figcaption>האנטומיה של פלקסבוקס, כאשר flex-direction: row</figcaption>
 </figure>
 
 <p>

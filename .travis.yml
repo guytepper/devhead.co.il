@@ -1,5 +1,8 @@
 sudo: false
 
+notifications:
+  email: false
+
 language: ruby
 rvm:
 - 2.1
@@ -14,4 +17,4 @@ install:
 
 script:
   - jekyll build
-  - htmlproofer ./_site --disable-external
+  - htmlproofer ./_site --assume-extension --empty-alt-ignore
