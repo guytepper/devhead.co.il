@@ -1,0 +1,20 @@
+sudo: false
+
+notifications:
+  email: false
+
+language: ruby
+rvm:
+- 2.2.2
+
+env:
+  global:
+    # speeds up installation of html-proofer
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+install:
+  - gem install jekyll i18n html-proofer
+
+script:
+  - jekyll build
+  - htmlproofer ./_site --assume-extension --empty-alt-ignore

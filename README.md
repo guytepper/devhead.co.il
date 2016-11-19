@@ -1,4 +1,5 @@
-# [DevHead.co.il](DevHead.co.il)
+[DevHead.co.il](http://devhead.co.il) [![Build Status](https://travis-ci.org/guytepper/devhead.co.il.svg?branch=master)](https://travis-ci.org/guytepper/devhead.co.il)
+=========
 
 ## Requirements
 * [node & npm](https://nodejs.org/en/download/)
