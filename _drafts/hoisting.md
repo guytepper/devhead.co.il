@@ -56,8 +56,17 @@ var sayHello = function() {
 }
 {% endhighlight %}
 
-כאן המשתנה `sayHello` הועבר לתחילת הקוד, אך השמת הערך אליו נשארה במקום. מאחר וניסינו להפעיל את המשתנה `sayHello` כאשר לא שויכה אליו פונקציה, קיבלנו `TypeError`.
+כאן המשתנה `sayHello` הועבר לתחילת הקוד, אך השמת הערך אליו נשארה במקום. מאחר וניסינו להפעיל את המשתנה `sayHello` כאשר לא שויכה אליו פונקציה, קיבלנו `TypeError`. כך זה נראה בפועל:
 
+{% highlight javascript %}
+var sayHello;
+
+sayHello(); // TypeError: sayHello is not a function
+
+sayHello = function() {
+  console.log('Hello!');
+}
+{% endhighlight %}
 
 ## לסיכום
 *  כל ההכרזות, בין אם של פונקציות או משתנים עוברות Hoisting ומועברות לתחילת התחום בו הן הוכרזו.  
