@@ -4,24 +4,24 @@ title: Hoisting ב- JavaScript
 excerpt: soon
 ---
 
-[אז למדנו על סוגי התחומים השונים והדרך בה משתנים משתייכים לתחומים בהם הוכרזו](/javascript-variable-scope). אבל האם ישנה משמעות למיקום המשתנים בתחום?
+אז למדנו על [סוגי התחומים השונים והדרך בה משתנים משתייכים לתחומים בהם הוכרזו](javascript-variable-scope/). אבל האם ישנה משמעות למיקום הכרזת המשתנים בתחום?
 
 {% highlight javascript %}
 console.log(a); // undefined
 var a = 2;
 {% endhighlight %}
 
-המשמעות של `undefined` היא שהמשתנה **_כבר הוכרז_** אך אין לו ערך (לעומת `ReferenceError`, האומר שניסינו לגשת למשתנה לא קיים).  
+המשמעות של `undefined` היא שהמשתנה **הוכרז** אך אין לו ערך (לעומת `ReferenceError`, האומר שניסינו לגשת למשתנה לא קיים).  
 איך יכול להיות שהמשתנה קיים אם הכרזנו על המשתנה אחרי שקראנו לו?
 
 הסיבה היא שלפני שהדפדפן מריץ את הקוד ישנו תהליך קומפילציה, בו הקומפיילר קורא את כל הכרזות המשתנים ומפרק אותם לשניים - הכרזות משתנים והשמת ערך אליהם.  
 כך, הביטוי `var a = 2` יפורק ל- `var a` ו- `a = 2`. הכרזת המשתנה תועבר לתחילת התחום בו הוכרז, בעוד שהשמת הערך למשתנה תשאר במקום בו נכתבה.
 
+קטע הקוד שלמעלה ייראה כך לאחר שהקומפייר עבר עליו:
 
-כך ייראה קטע הקוד שלמעלה אחרי שהקומפייר עבר עליו:
 {% highlight javascript %}
 var a;
-console.log(a)
+console.log(a);
 a = 2;
 {% endhighlight %}
 
@@ -29,14 +29,14 @@ a = 2;
 גם על פונקציות מתבצע Hoisting, אבל לפני שנדבר על כך, בוא ונבדיל בין **_Function Declaration_** ל- **_Function Expression_**.
 
 {% highlight javascript %}
-function foo() {} // Function Decleration
+function foo() {} // Function Declaration
 var foo = function() {} // Function Expression
 {% endhighlight %}
 
 דרך פשוטה להבדיל בין השניים, היא שכאשר נכריז על פונקציה (Function Declaration), המילה `function` תבוא תמיד ראשונה בשורת הקוד.  
 לעומת זאת, כאשר נצהיר על פונקציה בתוך ביטוי כלשהוא (Function Expression), תמיד יופיע קוד מסוים לפני המילה `function`.
 
-**Function Declerations** עוברות תמיד לתחילת התחום בו הוכרזו, כך שניתן לקרוא לפונקציה לפני המיקום בו הוכרזה כביכול.
+**Function Declarations** עוברות תמיד לתחילת התחום בו הוכרזו, כך שניתן לקרוא לפונקציה לפני המיקום בו הוכרזה כביכול.
 
 {% highlight javascript %}
 sayHello(); // Hello!
