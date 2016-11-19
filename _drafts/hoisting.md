@@ -26,7 +26,15 @@ a = 2;
 {% endhighlight %}
 
 
-גם על הכרזת פונקציות (Function Declaration) מתבצע Hoisting. לדוגמה:
+גם על הכרזת פונקציות (Function Declaration) מתבצע Hoisting, אבל לפני שנדבר על כך, בוא ונבדיל בין **_Function Declaration_** ל- **_Function Expression_**.
+
+{% highlight javascript %}
+function foo()  { } // Function Decleration
+var foo = function() { } // Function Expression
+{% endhighlight %}
+
+כאשר נכריז על פונקציהדרך פשוטה להבדיל בין השניים, היא שכאשר נכריז על פונקציה (Declaration), המילה `function` תבוא תמיד ראשונה בשורת הקוד.  
+לעומת זאת, כאשר נצהיר על פונקציה בתוך ביטוי כלשהוא (Function Expression), תמיד יופיע קוד מסוים לפני המילה `function`.
 
 {% highlight javascript %}
 sayHello(); // Hello!
