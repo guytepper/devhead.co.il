@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hoisting ב- JavaScript
-excerpt: soon
+excerpt: Hoisting הוא כינוי לתהליך ב- JavaScript בו הכרזות על משתנים ופונקציות עוברות לתחילת קטע הקוד.
 ---
 
 אז למדנו על [סוגי התחומים השונים והדרך בה משתנים משתייכים לתחומים בהם הוכרזו](javascript-variable-scope/). אבל האם ישנה משמעות למיקום הכרזת המשתנים בתחום?
