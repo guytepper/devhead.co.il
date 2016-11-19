@@ -63,9 +63,9 @@ body {
   border-bottom: 1px solid #D5D5D5;
 }
 
-.site-logo {
-  min-width: 18.75rem; /* Wraps site-links to new line */
+.site-logo {  
   margin: 0;
+  margin-left: 70px;
   font: 1.875em/1.5 'Courier New';
   color: #247BA0;
 }
