@@ -36,7 +36,7 @@ var foo = function() {} // Function Expression
 דרך פשוטה להבדיל בין השניים, היא שכאשר נכריז על פונקציה (Function Declaration), המילה `function` תבוא תמיד ראשונה בשורת הקוד.  
 לעומת זאת, כאשר נצהיר על פונקציה בתוך ביטוי כלשהוא (Function Expression), תמיד יופיע קוד מסוים לפני המילה `function`.
 
-Function Declerations עוברות תמיד לתחילת התחום בו הוכרזו, כך שניתן לקרוא להן לפני שהוכרזו כביכול.
+**Function Declerations** עוברות תמיד לתחילת התחום בו הוכרזו, כך שניתן לקרוא להן לפני שהוכרזו כביכול.
 
 {% highlight javascript %}
 sayHello(); // Hello!
@@ -45,6 +45,19 @@ function sayHello() {
   console.log('Hello!');
 }
 {% endhighlight %}
+
+**Function Expressions** לא עוברות Hoisting. אם שייכנו פונקציה למשתנה, הכרזת המשתנה תועבר לתחילת התחום, אך שיוך הפונקציה יישאר במקום המקורי.
+
+{% highlight javascript %}
+sayHello(); // TypeError: sayHello is not a function
+
+var sayHello = function() {
+  console.log('Hello!');
+}
+{% endhighlight %}
+
+כאן המשתנה `sayHello` הועבר לתחילת הקוד, אך השמת הערך אליו נשארה במקום. מאחר וניסינו להפעיל את המשתנה `sayHello` כאשר לא שויכה אליו פונקציה, קיבלנו `TypeError`.
+
 
 ## לסיכום
 *  כל ההכרזות, בין אם של פונקציות או משתנים עוברות Hoisting ומועברות לתחילת התחום בו הן הוכרזו.  
