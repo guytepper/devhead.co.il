@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Hoisting
+title: Hoisting ב- JavaScript
 excerpt: soon
 ---
 
-אז למדנו על סוגי התחומים השונים והדרך בה משתנים משתייכים לתחומים בהם הוכרזו. אבל האם ישנה משמעות למיקום המשתנים בתחום?
+[אז למדנו על סוגי התחומים השונים והדרך בה משתנים משתייכים לתחומים בהם הוכרזו](/javascript-variable-scope). אבל האם ישנה משמעות למיקום המשתנים בתחום?
 
 {% highlight javascript %}
 console.log(a); // undefined
@@ -68,7 +68,7 @@ sayHello = function() {
 }
 {% endhighlight %}
 
-Function Declerations יעברו Hoisting תמיד לפני הכרזות על משתנים:
+הכרזות על פונקציות יופיעו תמיד לפני הכרזרות על משתנים, כפי שניתן לראות בדוגמה הבאה:
 
 {% highlight javascript %}
 sayHello(); // Hello!
@@ -84,25 +84,23 @@ var sayHello = function() {
 sayHello(); // Goodbye!
 {% endhighlight %}
 
-יפורש כך:
+קוד זה יפורש כך:
 
 {% highlight javascript %}
 function sayHello() {
   console.log('Hello!');
 }
 
-var sayHello; // IGNORED
-
-sayHello();
+sayHello(); // Hello!
 
 sayHello = function() {
   console.log('Goodbye!');
 }
 
-sayHello();
+sayHello(); // Goodbye!
 {% endhighlight %}
 
 ## לסיכום
-*  כל ההכרזות, בין אם של פונקציות או משתנים עוברות Hoisting ומועברות לתחילת התחום בו הן הוכרזו.  
-* הכרזות על פונקציות ימוקמו קודם להכרזה על משתנים.
-* עוד משו
+*  כל הכרזה, בין אם של פונקציה או של משתנה, עוברת Hoisting ומועברת לתחילת התחום בו הן הוכרזו.  
+* השמת ערך למשתנה לא תעבור Hoisting ותשאר במקומה המקורי.
+* הכרזת פונקציות ימוקמו קודם להכרזה על משתנים לאחר ה- Hoisting.
