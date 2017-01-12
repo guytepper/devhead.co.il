@@ -63,9 +63,18 @@ body {
   border-bottom: 1px solid #D5D5D5;
 }
 
+.site-title-link {
+  width: 100%
+}
+
+  @media (min-width: 360px) {
+    .site-title-link {
+      width: auto;
+    }
+  }
+
 .site-title {
   margin: 0;
-  margin-left: 70px;
   font: 1.875em/1.5 'Courier New';
   color: #247BA0;
 }
