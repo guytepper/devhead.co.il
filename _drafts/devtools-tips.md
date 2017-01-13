@@ -49,3 +49,17 @@ title: טיפים וטריקים ל- Chrome DevTools
 אנחנו עדיין בחלונית האלמנטים, אבל נתרכז בנושא הצבעים כעת.
 
 **שינוי פורמט צבע**  
+על מנת לשנות את הפורמט שבו הצבע מוצג, יש ללחוץ על Shift וקליק על הצבע.
+
+<img src="/images/posts/devtools-tips/change-color-format.gif" alt="">
+
+**Color Palettes**  
+ניתן ליצור בכרום פלטות צבעים מותאמות אישית, אבל גם להשתמש בכאלה קיימות. 2 פלטות הצבעים שמגיעות עם הדפדפן הן Material Design ו- Page Colors.  
+את פלטת הצבעים הראשונה אתם וודאי מכירים, והשניה תציג את הצבעים הפופולאריים בדף שנטען.
+
+<img src="/images/posts/devtools-tips/color-palettes.gif" alt="">
+
+**Color Picker**  
+אם תרצו לבחור צבע שכבר קיים איפשהוא בדף, ניתן להשתמש ב- Color Picker המובנה בדפדפן.
+
+<img src="/images/posts/devtools-tips/color-picker.gif" alt="">
