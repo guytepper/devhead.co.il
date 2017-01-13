@@ -96,6 +96,15 @@ a {
   border-bottom: .08em solid #70C1B3;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 32px;
+}
+
 .posts {
   margin-right: -2em;
   list-style: none;
