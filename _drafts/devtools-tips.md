@@ -40,6 +40,11 @@ title: טיפים וטריקים ל- Chrome DevTools
 לפעמים יש כמה הגדרות עיצוביות זהות שמוחלים על אותו האלמנט. למשל יכול להיות שגודל מסך מסוים ה- `margin` יהיה `50px`, ובגודל מסך אחר הוא יהיה `100px`.
 על מנת לדעת איזו הגדרה באמת מוחלת על האלמנט, ניתן ללחוץ על computed ולראות מה באמת נמצא על האלמנט.
 
+<img src="/images/posts/devtools-tips/computed-props@1x.jpg"
+     srcset="/images/posts/devtools-tips/computed-props@2x.jpg 2x"
+    alt="" width="300">
+
+
 ## צבעים
 אנחנו עדיין בחלונית האלמנטים, אבל נתרכז בנושא הצבעים כעת.
 
