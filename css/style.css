@@ -128,13 +128,7 @@ a {
 }
 
 .content {
-  margin-bottom: calc(100vh - 70px - 230px);
-}
-
-@media (min-width: 480px) {
-  .content {
-    margin-bottom: calc(100vh - 70px - 370px);
-  }
+  margin-bottom: calc(100vh - 70px - 360px);
 }
 
 .content a {
