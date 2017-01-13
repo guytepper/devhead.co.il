@@ -98,6 +98,7 @@ a {
 .footer {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .social-icons {
@@ -125,10 +126,6 @@ a {
 
 .list-item {
   margin-top: 0.3125em;
-}
-
-.content {
-  margin-bottom: calc(100vh - 70px - 360px);
 }
 
 .content a {
