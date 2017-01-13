@@ -101,6 +101,11 @@ a {
   justify-content: center;
 }
 
+.social-icons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .social-icon {
   width: 32px;
 }
