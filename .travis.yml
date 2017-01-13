@@ -17,4 +17,4 @@ install:
 
 script:
   - jekyll build
-  - htmlproofer ./_site --assume-extension --empty-alt-ignore --http_status_ignore=[999,404]
+  - htmlproofer ./_site --assume-extension --empty-alt-ignore --http_status_ignore=999
