@@ -1,5 +1,4 @@
 body {
-  min-height: 100vh;
   margin: 0;
   font: 17px/1.6 'Open Sans Hebrew', Arial, sans-serif;
 }
@@ -96,6 +95,24 @@ a {
   border-bottom: .08em solid #70C1B3;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 39px;
+  height: 40px;
+  margin-right: 4px;
+}
+
 .posts {
   margin-right: -2em;
   list-style: none;
@@ -108,6 +125,10 @@ a {
 
 .list-item {
   margin-top: 0.3125em;
+}
+
+.content {
+  margin-bottom: calc(100vh - 70px - 360px);
 }
 
 .content a {
