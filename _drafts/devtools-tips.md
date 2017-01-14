@@ -8,7 +8,7 @@ title: טיפים וטריקים ל- Chrome DevTools
 הטיפ הראשון יותר רלוונטי למשתמשי מקינטוש. הרבה פעמים כשאני עובר בין טאבים בעזרת `CMD+ספרה`, יוצא שאני לוחץ בטעות על `CMD+Q`, הדפדפן יוצא בפתאומיות ואני מרגיש כאילו חרב עליי עולמי.
 בדיוק בגלל מקרים כאלו החברים בכרום חשבו על דרך קלה למנוע אסונות כאלו.
 
-גשו לתפריט Chrome ולאחר מכן לחצו על Warn Before Quitting.
+גשו לתפריט Chrome ולאחר מכן לחצו על **Warn Before Quitting**.
 
 <img src="/images/posts/devtools-tips/warn-before-quitting@1x.jpg"
      srcset="/images/posts/devtools-tips/warn-before-quitting@2x.jpg 2x"
@@ -26,18 +26,18 @@ title: טיפים וטריקים ל- Chrome DevTools
 
 **הסתרת אלמנטים**  
 
-על מנת להסתיר או להציג אלמנטים, ניתן ללחוץ על האלמנט ולאחר מכן על `H`  
+על מנת להסתיר או להציג אלמנטים, ניתן ללחוץ על האלמנט ולאחר מכן על `H`.
 
 <img src="/images/posts/devtools-tips/hide-element.gif" alt="">
 
 **הצגת אלמנטים במרכז המסך**  
 
-אם אתם לא בטוחים איפה אלמנט נמצא, לחצו עליו קליק ימני ואז Scroll into View
+אם אתם לא בטוחים איפה אלמנט נמצא בעמוד, לחצו עליו קליק ימני ואז **Scroll into View**.
 
 <img src="/images/posts/devtools-tips/scroll-into-view.gif" alt="">
 
 **איזה עיצובים מוחלים על אלמנט**  
-לפעמים יש כמה הגדרות עיצוביות זהות שמוחלים על אותו האלמנט. למשל יכול להיות שגודל מסך מסוים ה- `margin` יהיה `50px`, ובגודל מסך אחר הוא יהיה `100px`.
+לפעמים ישנן כמה הגדרות עיצוביות זהות שמוחלים על אותו האלמנט. למשל יכול להיות שגודל מסך מסוים ה- `margin` יהיה `50px`, ובגודל מסך אחר הוא יהיה `100px`.
 על מנת לדעת איזו הגדרה באמת מוחלת על האלמנט, ניתן ללחוץ על computed ולראות מה באמת נמצא על האלמנט.
 
 <img src="/images/posts/devtools-tips/computed-props@1x.jpg"
@@ -49,7 +49,7 @@ title: טיפים וטריקים ל- Chrome DevTools
 אנחנו עדיין בחלונית האלמנטים, אבל נתרכז בנושא הצבעים כעת.
 
 **שינוי פורמט צבע**  
-על מנת לשנות את הפורמט שבו הצבע מוצג, יש ללחוץ על Shift וקליק על הצבע.
+על מנת לשנות את הפורמט שבו הצבע מוצג, יש ללחוץ על `Shift` וקליק על הצבע.
 
 <img src="/images/posts/devtools-tips/change-color-format.gif" alt="">
 
@@ -97,3 +97,12 @@ title: טיפים וטריקים ל- Chrome DevTools
 <img src="/images/posts/devtools-tips/add-folder-to-workspace@1x.jpg"
      srcset="/images/posts/devtools-tips/add-folder-to-workspace@2x.jpg 2x"
     alt="" width="300">
+
+4. לחצו קליק ימני על קובץ מקור אשר שייך לאתר עליו אתם עובדים
+5. לחצו על **Map to File System Resource**
+6. בחרו את הקובץ המקומי אשר תואם את הקובץ אותו בחרתם
+7. טענו את העמוד מחדש וכרום ימפה את הקובץ שנטען לקובץ המקומי! 🤗
+
+---
+
+זה הכל לבנתיים. אם אתם מכירים עוד טיפים שלא רשמתי, אתם מוזמנים ל[שלוח לי מייל](mailto:guytepper@gmail.com) ואשמח להוסיף!
