@@ -2,6 +2,7 @@
 layout: post
 title: טיפים וטריקים ב- Chrome DevTools
 excerpt: הכלים למפתחים בכרום רבים ומגוונים, וכך יוצא שהרבה מפתחים לא מכירים כמה פונקציות בסיסיות שהדפדפן מציע. הנה מספר טריקים שאולי לא הכרתם
+thumbnail: http://devhead.co.il/images/thumbnails/chrome-devtools.png
 ---
 בשבועות האחרונים נחשפתי למספר טיפים וטריקים שלא הכרתי ב- Chrome DevTools, גם לאחר שנים של שימוש בדפדפן. החלטתי לשתף כמה מהם כאן.
 
