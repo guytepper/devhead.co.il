@@ -228,6 +228,18 @@ figcaption {
   text-align: center;
 }
 
+.post-video {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 540px) {
+  .post-video {
+    width: 80%;
+  }
+}
+
 @-webkit-keyframes highlight {
   0% {
     color: red;
