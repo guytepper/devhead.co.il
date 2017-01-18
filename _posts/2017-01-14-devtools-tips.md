@@ -6,7 +6,7 @@ thumbnail: http://devhead.co.il/images/thumbnails/chrome-devtools.png
 ---
 בשבועות האחרונים נחשפתי למספר טיפים וטריקים שלא הכרתי ב- Chrome DevTools, גם לאחר שנים של שימוש בדפדפן. החלטתי לשתף כמה מהם כאן.
 
-<iframe width="560" height="285" src="https://www.youtube.com/embed/A_5ja1JdDK4" frameborder="0" allowfullscreen class="post-video"></iframe>
+<iframe height="285" src="https://www.youtube.com/embed/A_5ja1JdDK4" frameborder="0" allowfullscreen class="post-video"></iframe>
 
 ## Warn Before Quitting
 הטיפ הראשון יותר רלוונטי למשתמשי מקינטוש. הרבה פעמים כשאני עובר בין טאבים בעזרת `CMD+ספרה`, יוצא שאני לוחץ בטעות על `CMD+Q`, הדפדפן יוצא בפתאומיות ואני מרגיש כאילו חרב עליי עולמי.
