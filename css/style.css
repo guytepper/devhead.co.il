@@ -1,5 +1,4 @@
 body {
-  min-height: 100vh;
   margin: 0;
   font: 17px/1.6 'Open Sans Hebrew', Arial, sans-serif;
 }
@@ -39,7 +38,7 @@ body {
       }
     }
 
-    @media (min-width: 1441px) {gi
+    @media (min-width: 1441px) {
       .site-container {
         max-width: 47.5rem;
       }
@@ -63,11 +62,20 @@ body {
   border-bottom: 1px solid #D5D5D5;
 }
 
-.site-logo {
-  min-width: 18.75rem; /* Wraps site-links to new line */
+.site-title-link {
+  width: 100%
+}
+
+  @media (min-width: 360px) {
+    .site-title-link {
+      width: auto;
+    }
+  }
+
+.site-title {
   margin: 0;
   font: 1.875em/1.5 'Courier New';
-  color: #247BA0;
+  color: #4a90e2;
 }
 
 a {
@@ -85,6 +93,25 @@ a {
 
 .site-links__item:hover {
   border-bottom: .08em solid #70C1B3;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 39px;
+  height: 40px;
+  margin-right: 4px;
 }
 
 .posts {
@@ -199,6 +226,18 @@ figcaption {
   font-weight: 100;
   font-style: italic;
   text-align: center;
+}
+
+.post-video {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 540px) {
+  .post-video {
+    width: 80%;
+  }
 }
 
 @-webkit-keyframes highlight {
