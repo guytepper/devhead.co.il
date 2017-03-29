@@ -29,17 +29,16 @@ foo(0); // 2
  x = x !== undefined ? x || 2;
 {% endhighlight %}
 
-כאן אנו בודקים אם יש ערך כלשהוא שהוצב ב- x. אם כן, זה הערך שנבחר, אם לא, נבחר את הערך השני.
-כן, זה לא ברור במיוחד. מזל שיש את ES6.
+כאן אנו בודקים אם יש ערך כלשהוא שהוצב ב- `x`. אם כן, זה הערך שנבחר. אם לא, נבחר את הערך השני.  
+נכון - זה לא ברור במיוחד. מזל שיש את ES6.
 
 ## ערכי ברירת מחדל ב- ES6
 
 עם ES6 הכל נהיה פשוט יותר. כך נכתוב פונקציה המקבלת פרמטר עם ערך ברירת מחדל:
 
-
 {% highlight javascript %}
 function foo(x = 2) {
-	console.log(x);
+  console.log(x);
 }
 
 foo(5); // 5
@@ -47,17 +46,29 @@ foo(0); // 0
 foo(); // 2
 {% endhighlight %}
 
-נוסף על כך, יש אפשרות לכתוב ביטוי (expression) בתור ערך ברירת מחדל לפרמטר, כך שניתן לקרוא לפונקציה אם לא הועבר אליה פרמטר. לדוגמה:
+נוסף על כך, ישנה אפשרות לכתוב ביטוי (expression) בתור ערך ברירת מחדל לפרמטר. בצורה זו נוכל לקרוא לפונקציה אחרת ולהציב את הערך שהיא מחזירה לפרמטר:
 
 {% highlight javascript %}
 function bar() {
-	return "hola!";
+  return "hola!";
 }
 
 function foo(x = bar()) {
-	console.log(x);
+  console.log(x);
 }
 
 foo("hello!"); // "hello!"
 foo(); // "hola!"
+{% endhighlight %}
+
+איך אפשר להשתמש בזה פרקטית? דוגמה אחת יכולה להיות יצירת ID ייחודי למשתמש, אם לא העברנו לפונקציה את ה- ID כפרמטר:
+
+{% highlight javascript %}
+function generateID() {
+  // return random id number
+}
+
+function registerUser(id = generateID()) {
+  // register user
+}
 {% endhighlight %}
