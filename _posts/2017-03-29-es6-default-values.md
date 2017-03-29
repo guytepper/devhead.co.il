@@ -1,7 +1,8 @@
 ---
 layout: post
-title: ES6 - Default Parameters
+title: ES6 - Default Values
 excerpt: ES6 מאפשרת לקבוע ערכי ברירת מחדל לפרמטרים של פונקציות, שיהיו בשימוש כאשר הפונקציה נקראת ללא פרמטרים.
+thumbnail: http://devhead.co.il/images/thumbnails/es6-default-values.png
 ---
 אם הייתם רוצים ליצור בג׳אווהסקריפט פונקציה אשר מקבלת פרמטר עם ערך ברירת מחדל, יכול להיות שהייתם כותבים משהו כזה:
 
