@@ -1,4 +1,4 @@
-[DevHead.co.il](http://devhead.co.il) [![Build Status](https://travis-ci.org/guytepper/devhead.co.il.svg?branch=master)](https://travis-ci.org/guytepper/devhead.co.il)
+[DevHead.co.il](https://devhead.co.il) [![Build Status](https://travis-ci.org/guytepper/devhead.co.il.svg?branch=master)](https://travis-ci.org/guytepper/devhead.co.il)
 =========
 
 ## Requirements
