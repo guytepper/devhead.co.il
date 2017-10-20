@@ -72,7 +72,7 @@ footer {
 הידד! כעת אנחנו מציגים את תוכן האתר בצורה ברורה, ה- `footer` נגיש ואין בעיה לגשת למסך הבית.
 
 <aside class="post__note">
-<p>iOS 11 משתמשת בפונקציית ה- <code>()constant</code>, אך ב- <a href="https://github.com/w3c/csswg-drafts/issues/1693">CSS Working Group החליטו</a> להשתמש בשם <code>()env</code> לפונקציה בסופו של דבר.</p>
+<p>iOS 11 משתמשת בפונקציית ה- <code>()constant</code> בכדי לגשת למשתנים שהוגדרו ע״י הדפדפן, אך ב- <a href="https://github.com/w3c/csswg-drafts/issues/1693">CSS Working Group החליטו</a> להשתמש בשם <code>()env</code> לפונקציה בסופו של דבר.</p>
 <p>לכן, על מנת לתמוך באייפון X נכון לעכשיו, יש להשתמש בפונקצייה <code>()constant</code>, אך בעתיד יהיה צורך לשנות את השם ל- <code>()env</code>.</p>
 </aside>
 
@@ -84,8 +84,8 @@ footer {
   <img src="/images/posts/designing-for-iphone-x/portrait.png" width="300" alt="">
 </a>
 
-כפי שניתן לראות, אין יותר מרווח בין קצוות המסך לתוכן. הסיבה היא שהגדרנו מחדש את ה- `padding` של אלמנט התוכן עם ה- constant.
-הערך של ה- constant הוא דינאמי לפי המצב בו המכשיר מוחזק, ולכן כשעברנו למצב אנכי הערך של `safe-area-inset-right` עבר להיות 0.
+כפי שניתן לראות, אין יותר מרווח בין קצוות המסך לתוכן. הסיבה היא שהגדרנו מחדש את ה- `padding` של אלמנט התוכן עם משתנה.
+ערך המשתנה הוא דינאמי לפי המצב בו המכשיר מוחזק, ולכן כשעברנו למצב אנכי ערך המשתנה `safe-area-inset-right` עבר להיות 0.
 
 
 ניתן לפתור את הבעיה הזו בעזרת 2 פונקציות CSS חדשות: `min` ו- `max`.  
@@ -110,7 +110,7 @@ footer {
 </p>
 </aside>
 
-כעת, כשנחזיק את המכשיר במצב אופקי, ערך ה- `padding` שיוחל הוא ה- constant, וכשנחזיק את המכשיר במצב אנכי הערך יהיה `12px`.
+כעת, כשנחזיק את המכשיר במצב אופקי, ערך ה- `padding` שיוחל יהיה ערך המשתנה, וכשנחזיק את המכשיר במצב אנכי הערך יהיה `12px`.
 
 <a href="https://guytepper.github.io/designing-websites-for-iphone-x/he/default/">
   <img src="/images/posts/designing-for-iphone-x/portrait-fixed.png" width="300" alt="">
