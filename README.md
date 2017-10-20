@@ -1,13 +1,9 @@
 [DevHead.co.il](https://devhead.co.il) [![Build Status](https://travis-ci.org/guytepper/devhead.co.il.svg?branch=master)](https://travis-ci.org/guytepper/devhead.co.il)
 =========
 
-## Requirements
-* [node & npm](https://nodejs.org/en/download/)
-
 ## Installation
 Using the command line, run the following commands inside the project's root folder:  
 ```bash
-npm install
 gem install jekyll
 gem install i18n
 ```
