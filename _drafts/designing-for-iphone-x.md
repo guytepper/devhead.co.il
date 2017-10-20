@@ -35,7 +35,18 @@ title: עיצוב לאייפון x
 
 בעזרתם נוכל להוסיף `padding` / `margin` לתוכן שלנו על מנת להגיע לאיזורים הבטוחים של המכשיר.
 
--- קטע css בו מוצג השימוש --
+{% highlight css %}
+
+main {
+  padding-right: constant(safe-area-inset-right);
+  padding-left: constant(safe-area-inset-left);
+}
+
+footer {
+  padding-bottom: constant(safe-area-inset-bottom);
+}
+
+{% endhighlight %}
 
 <a href="https://guytepper.github.io/designing-websites-for-iphone-x/he/constants/">
   <img src="/images/posts/designing-for-iphone-x/constants.png" width="550" alt="">
@@ -51,7 +62,7 @@ title: עיצוב לאייפון x
   <img src="/images/posts/designing-for-iphone-x/portrait.png" width="300" alt="">
 </a>
 
-כפי שניתן לראות, אין יותר מרווח בין קצוות המסך לתוכן. הסיבה היא שהגדרנו מחדש את ה- `padding` של אלמנט התוכן עם ה- constant. הערך של constant הוא דינאמי לפי המצב בו המחזיק מוחזק, ולכן כשעברנו למצב אנכי הערך של safe-area-inset-right עבר להיות 0.
+כפי שניתן לראות, אין יותר מרווח בין קצוות המסך לתוכן. הסיבה היא שהגדרנו מחדש את ה- `padding` של אלמנט התוכן עם ה- constant. הערך של constant הוא דינאמי לפי המצב בו המחזיק מוחזק, ולכן כשעברנו למצב אנכי הערך של `safe-area-inset-right` עבר להיות 0.
 
 ניתן לפתור את הבעיה הזו בעזרת 2 פונקציות חדשות ב- CSS: max ו- min.
 הפונקציות לוקחות 2 משתנים ומחזירות את הערך הגדול / הקטן מבין שניהם.
@@ -60,6 +71,6 @@ iOS 11 נכון לכתיבת שורות אלו לא תומכת בפונקציו�
 
 -- קטע קוד --
 
-חשוב לבדוק לבדוק לפני השימוש בפונקציות אם הן נתמכות ע״י הדפדפן, משום שאם הדפדפן לא תומך בהן הדפדפן לא ישתמש בערך שהוגדר קודם לכן ל- padding, אלא יחזור לערך ברירת המחדל של padding.
+חשוב לבדוק לבדוק לפני השימוש בפונקציות אם הן נתמכות ע״י הדפדפן, משום שאם הדפדפן לא תומך בהן הדפדפן לא ישתמש בערך שהוגדר קודם לכן ל- `padding`, אלא יחזור לערך ברירת המחדל של `padding`.
 
 כעת, כשנחזיק את המכשיר במצב אופקי………….
