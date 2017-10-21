@@ -112,7 +112,7 @@ footer {
 
 כעת, כשנחזיק את המכשיר במצב אופקי, ערך ה- `padding` שיוחל יהיה ערך המשתנה, וכשנחזיק את המכשיר במצב אנכי הערך יהיה `12px`.
 
-<a href="https://guytepper.github.io/designing-websites-for-iphone-x/he/default/">
+<a href="https://guytepper.github.io/designing-websites-for-iphone-x/he/minmax/">
   <img src="/images/posts/designing-for-iphone-x/portrait-fixed.png" width="300" alt="">
 </a>
 
