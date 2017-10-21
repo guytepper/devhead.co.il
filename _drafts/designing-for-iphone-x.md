@@ -51,10 +51,10 @@ title: הכינו אתרכם לאייפון X
 - `safe-area-inset-bottom`
 
 <figure>
-  <a href="https://webkit.org/demos/safe-area-insets/safe-areas.html" target="_blank">
+  <a href="https://webkit.org/demos/safe-area-insets/safe-areas.html">
     <img src="/images/posts/designing-for-iphone-x/safe-areas.png" width="505" alt="">
   </a>
-  <figcaption>האיזורים הבטוחים והלא בטוחים באייפון X. 
+  <figcaption>האיזורים הבטוחים והלא בטוחים באייפון X.
     <a href="https://webkit.org/blog/7929/designing-websites-for-iphone-x/">נלקח מהבלוג הרשמי של WebKit.</a>
   </figcaption>
 </figure>
@@ -100,7 +100,7 @@ footer {
 ניתן לפתור את הבעיה הזו בעזרת 2 פונקציות CSS חדשות: `min` ו- `max`.  
 הפונקציות לוקחות 2 משתנים ומחזירות את הערך הגדול / הקטן מבין שניהם.
 
-נכון לכתיבת שורות אלו iOS 11 לא תומכת בפונקציות הנ״ל (ככל הנראה עדכון התומך בפונקציות ישוחרר לפני שחרור האייפון X). לעת עתה ניתן להתנסות איתן בעזרת [גרסת המפתחים של Safari](https://developer.apple.com/safari/technology-preview/).
+נכון לכתיבת שורות אלו iOS 11 לא תומכת בפונקציות הנ״ל (ככל הנראה עדכון תוכנה שיוסיף תמיכה בפונקציות ישוחרר לפני תאריך יציאת האייפון X). לעת עתה ניתן להתנסות איתן בעזרת [גרסת המפתחים של Safari](https://developer.apple.com/safari/technology-preview/).
 
 {% highlight css %}
 
@@ -115,7 +115,7 @@ footer {
 
 <aside class="post__note">
 <p>
-חשוב לבדוק לבדוק לפני השימוש בפונקציות אם הן נתמכות ע״י הדפדפן, משום שאם הדפדפן לא תומך בהן הדפדפן לא ישתמש בערך שהוגדר קודם לכן ל- <code class="highlighter-rouge">padding</code>, אלא יחזור לערך ברירת המחדל של <code class="highlighter-rouge">padding</code>.
+חשוב לבדוק לבדוק לפני השימוש בפונקציות אם הן נתמכות ע״י הדפדפן, משום שאם הוא לא תומך בהן, הדפדפן לא יבחר בערך שהוגדר קודם לכן ל- <code class="highlighter-rouge">padding</code>, אלא יחזור לערך ברירת המחדל של <code class="highlighter-rouge">padding</code>.
 </p>
 </aside>
 
