@@ -155,6 +155,9 @@ a {
   display: block;
   margin: 0.625em auto;
   max-width: 100%;
+}
+
+.img-border {
   border: 2px solid #E8E8E8
 }
 
