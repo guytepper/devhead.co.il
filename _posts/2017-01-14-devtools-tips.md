@@ -6,7 +6,7 @@ thumbnail: http://devhead.co.il/images/thumbnails/chrome-devtools.png
 ---
 בשבועות האחרונים נחשפתי למספר טיפים וטריקים שלא הכרתי ב- Chrome DevTools, גם לאחר שנים של שימוש בדפדפן. החלטתי לשתף כמה מהם כאן.
 
-<iframe height="285" src="https://www.youtube.com/embed/A_5ja1JdDK4" frameborder="0" allowfullscreen class="post-video"></iframe>
+<iframe height="285" src="https://www.youtube.com/embed/A_5ja1JdDK4" frameborder="0" allowfullscreen class="post-video img-border"></iframe>
 
 ## Warn Before Quitting
 הטיפ הראשון יותר רלוונטי למשתמשי מקינטוש. הרבה פעמים כשאני עובר בין טאבים בעזרת `CMD+ספרה`, יוצא שאני לוחץ בטעות על `CMD+Q`, הדפדפן יוצא בפתאומיות ואני מרגיש כאילו חרב עליי עולמי.
@@ -16,14 +16,14 @@ thumbnail: http://devhead.co.il/images/thumbnails/chrome-devtools.png
 
 <img src="/images/posts/devtools-tips/warn-before-quitting@1x.jpg"
      srcset="/images/posts/devtools-tips/warn-before-quitting@2x.jpg 2x"
-    alt="" width="300">
+    alt="" class="img-border" width="300">
 
 
 כעת, כאשר תלחצו על `CMD+Q`, תתבקשו להחזיק במקשים על מנת לסגור את הדפדפן.
 
 <img src="/images/posts/devtools-tips/hold-to-quit@1x.jpg"
      srcset="/images/posts/devtools-tips/hold-to-quit@2x.jpg 2x"
-    alt="" width="300">
+    alt="" class="img-border" width="300">
 
 ## Elements
 הטיפים הבאים יתייחסו לחלונית האלמנטים באינספקטור.  
@@ -32,13 +32,13 @@ thumbnail: http://devhead.co.il/images/thumbnails/chrome-devtools.png
 
 על מנת להסתיר או להציג אלמנטים, ניתן ללחוץ על האלמנט ולאחר מכן על `H`.
 
-<img src="/images/posts/devtools-tips/hide-element.gif" alt="">
+<img src="/images/posts/devtools-tips/hide-element.gif" class="img-border" alt="">
 
 **הצגת אלמנטים במרכז המסך**  
 
 אם אתם לא בטוחים איפה אלמנט נמצא בעמוד, לחצו עליו קליק ימני ואז **Scroll into View**.
 
-<img src="/images/posts/devtools-tips/scroll-into-view.gif" alt="">
+<img src="/images/posts/devtools-tips/scroll-into-view.gif" class="img-border" alt="">
 
 **איזה עיצובים מוחלים על אלמנט**  
 לפעמים ישנן כמה הגדרות עיצוביות זהות שמוחלים על אותו האלמנט. למשל יכול להיות שגודל מסך מסוים ה- `margin` יהיה `50px`, ובגודל מסך אחר הוא יהיה `100px`.
@@ -46,7 +46,7 @@ thumbnail: http://devhead.co.il/images/thumbnails/chrome-devtools.png
 
 <img src="/images/posts/devtools-tips/computed-props@1x.jpg"
      srcset="/images/posts/devtools-tips/computed-props@2x.jpg 2x"
-    alt="" width="300">
+    alt="" class="img-border" width="300">
 
 
 ## צבעים
@@ -55,18 +55,18 @@ thumbnail: http://devhead.co.il/images/thumbnails/chrome-devtools.png
 **שינוי פורמט צבע**  
 על מנת לשנות את הפורמט שבו הצבע מוצג, יש ללחוץ על `Shift` וקליק על הצבע.
 
-<img src="/images/posts/devtools-tips/change-color-format.gif" alt="">
+<img src="/images/posts/devtools-tips/change-color-format.gif" class="img-border" alt="">
 
 **Color Palettes**  
 ניתן ליצור בכרום פלטות צבעים מותאמות אישית, אבל גם להשתמש בכאלה קיימות. 2 פלטות הצבעים שמגיעות עם הדפדפן הן Material Design ו- Page Colors.  
 את פלטת הצבעים הראשונה אתם וודאי מכירים, והשניה תציג את הצבעים הפופולאריים בדף שנטען.
 
-<img src="/images/posts/devtools-tips/color-palettes.gif" alt="">
+<img src="/images/posts/devtools-tips/color-palettes.gif" class="img-border" alt="">
 
 **Color Picker**  
 אם תרצו לבחור צבע שכבר קיים איפשהוא בדף, ניתן להשתמש ב- Color Picker המובנה בדפדפן.
 
-<img src="/images/posts/devtools-tips/color-picker.gif" alt="">
+<img src="/images/posts/devtools-tips/color-picker.gif" class="img-border" alt="">
 
 ## Console
 קונסול הג׳אווהסקריפט יכול לבצע המון דברים שהרבה אנשים לא מודעים אליהם. הנה כמה מהם.
@@ -88,7 +88,7 @@ thumbnail: http://devhead.co.il/images/thumbnails/chrome-devtools.png
 **Unminify**  
 הרבה פעמים אנחנו רוצים להסתכל על קוד שכתבו / שאנחנו כתבנו ועבר מיניפקציה, כך שהוא לא קריא. כמה נחמד שכרום יודע להתמודד עם קבצים כאלו:
 
-<img src="/images/posts/devtools-tips/unminify.gif" alt="">
+<img src="/images/posts/devtools-tips/unminify.gif" class="img-border" alt="">
 
 **Workspaces**  
 זה אמנם פיצ׳ר ידוע בכרום, אבל הרבה מפתחים לא משתמשים בו. מה שהוא מאפשר זה לכתוב קוד ישירות בכרום, ולשמור את השינויים ישירות לקבצי המקור. כך למשל תוכלו לשנות הגדרות עיצוביות בלשונית האלמנטים, והשינויים ישמרו בקוד המקור.
@@ -101,7 +101,7 @@ thumbnail: http://devhead.co.il/images/thumbnails/chrome-devtools.png
 
 <img src="/images/posts/devtools-tips/add-folder-to-workspace@1x.jpg"
      srcset="/images/posts/devtools-tips/add-folder-to-workspace@2x.jpg 2x"
-    alt="" width="300">
+    alt="" class="img-border" width="300">
 
 4. לחצו קליק ימני על קובץ מקור אשר שייך לאתר עליו אתם עובדים
 5. לחצו על **Map to File System Resource**
