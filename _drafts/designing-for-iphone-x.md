@@ -24,7 +24,7 @@ title: הכינו אתרכם לאייפון X
 
 אם נרצה לבטל את ההתנהגות הזו ולהציג את התוכן על פני כל המסך, נוכל להשתמש בהרחבה חדשה לתגית המטא `viewport` הנקראת `viewport-fit`, המאפשרת לשלוט על איך תוכן האתר יוצג במקרים במקרים בהם גבולות המכשיר לא מרובעים.
 
-ערך ברירת המחדל ל- `viewport-fit` הוא `auto`, שכפי שראינו מקודם משאיר את התוכן באזורים הבטוחים של המכשיר.
+ערך ברירת המחדל ל- [`viewport-fit`](https://drafts.csswg.org/css-round-display/#viewport-fit-descriptor) הוא `auto`, שכפי שראינו מקודם משאיר את התוכן באזורים הבטוחים של המכשיר.
 אם נרצה להציג את תוכן הדף על פני כל המסך, נוכל לשנות את הערך ל- `cover`.
 
 {% highlight html %}
@@ -50,7 +50,16 @@ title: הכינו אתרכם לאייפון X
 - `safe-area-inset-top`
 - `safe-area-inset-bottom`
 
-בעזרתם נוכל להוסיף `padding` / `margin` לתוכן שלנו על מנת להגיע לאיזורים הבטוחים של המכשיר.
+<figure>
+  <a href="https://webkit.org/demos/safe-area-insets/safe-areas.html" target="_blank">
+    <img src="/images/posts/designing-for-iphone-x/safe-areas.png" width="505" alt="">
+  </a>
+  <figcaption>האיזורים הבטוחים והלא בטוחים באייפון X. 
+    <a href="https://webkit.org/blog/7929/designing-websites-for-iphone-x/">נלקח מהבלוג הרשמי של WebKit.</a>
+  </figcaption>
+</figure>
+
+בעזרת המשתנים נוכל להוסיף `padding` / `margin` לתוכן שלנו על מנת להגיע לאיזורים הבטוחים של המכשיר.
 
 {% highlight css %}
 
