@@ -51,7 +51,7 @@ excerpt: לאייפון X יש מסך שמגיע לכל קצוות המכשיר,
 
 ## זהירות מוקשים
 
-על מנת לפתור את הבעיות הללו נוצרו ארבעה משתנים, שניתן לגשת אליהן דרך ה- CSS בעזרת פונקציית `()constant`. המשתנים הם:
+על מנת לפתור את הבעיות הללו נוצרו ארבעה משתנים, שניתן לגשת אליהן דרך ה- CSS בעזרת פונקציית `()env`. המשתנים הם:
 
 - `safe-area-inset-left`
 - `safe-area-inset-right`
@@ -72,12 +72,12 @@ excerpt: לאייפון X יש מסך שמגיע לכל קצוות המכשיר,
 {% highlight css %}
 
 main {
-  padding-right: constant(safe-area-inset-right);
-  padding-left: constant(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-left: env(safe-area-inset-left);
 }
 
 footer {
-  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 {% endhighlight %}
@@ -89,9 +89,10 @@ footer {
 הידד! כעת אנחנו מציגים את תוכן האתר בצורה ברורה, ה- `footer` נגיש ואין בעיה לגשת למסך הבית.
 
 <aside class="post__note">
-<p>iOS 11 משתמשת בפונקציית ה- <code>()constant</code> בכדי לגשת למשתנים שהוגדרו ע״י הדפדפן, אך ב- <a href="https://github.com/w3c/csswg-drafts/issues/1693">CSS Working Group החליטו</a> להשתמש בשם <code>()env</code> לפונקציה בסופו של דבר.</p>
-<p>לכן, על מנת לתמוך באייפון X נכון לעכשיו, יש להשתמש בפונקצייה <code>()constant</code>, אך בעתיד יהיה צורך לשנות את השם ל- <code>()env</code>.</p>
-</aside>
+<p>iOS 11.0 משתמשת בפונקציית ה- <code>()constant</code> בכדי לגשת למשתנים שהוגדרו ע״י הדפדפן, אך ב- <a href="https://github.com/w3c/csswg-drafts/issues/1693">CSS Working Group החליטו</a> להשתמש בשם <code>()env</code> לפונקציה בסופו של דבר, והפונקציה נכנסה לשימוש מגרסה iOS 11.2.
+</p><p>
+לכן, על מנת לתמוך בגרסאות הראשונות של iOS 11 וגם בגרסאות החדשות, יש להשתמש בשתי השמות (לדוגמה - לכתוב padding פעמיים, כשהשימוש ב- env יהיה אחרון).
+</p></aside>
 
 # משנים כיוון
 
@@ -108,14 +109,13 @@ footer {
 ניתן לפתור את הבעיה הזו בעזרת 2 פונקציות CSS חדשות: `min` ו- `max`.  
 הפונקציות לוקחות 2 משתנים ומחזירות את הערך הגדול / הקטן מבין שניהם.
 
-נכון לכתיבת שורות אלו iOS 11 לא תומכת בפונקציות הנ״ל (ככל הנראה עדכון תוכנה שיוסיף תמיכה בפונקציות ישוחרר לפני תאריך יציאת האייפון X). לעת עתה ניתן להתנסות איתן בעזרת [גרסת המפתחים של Safari](https://developer.apple.com/safari/technology-preview/).
-
+הפונקציות הנ״ל נתמכות מגרסת iOS 11.2. 
 {% highlight css %}
 
 @supports(padding: max(0px)) {
   main {
-    padding-right: max(12px, constant(safe-area-inset-right));
-    padding-left: max(12px, constant(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-left: max(12px, env(safe-area-inset-left));
   }
 }
 
