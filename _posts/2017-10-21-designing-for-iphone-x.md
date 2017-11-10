@@ -51,7 +51,7 @@ excerpt: לאייפון X יש מסך שמגיע לכל קצוות המכשיר,
 
 ## זהירות מוקשים
 
-על מנת לפתור את הבעיות הללו נוצרו ארבעה משתנים, שניתן לגשת אליהן דרך ה- CSS בעזרת פונקציית `()constant`. המשתנים הם:
+על מנת לפתור את הבעיות הללו נוצרו ארבעה משתנים, שניתן לגשת אליהן דרך ה- CSS בעזרת פונקציית `()env`. המשתנים הם:
 
 - `safe-area-inset-left`
 - `safe-area-inset-right`
@@ -72,12 +72,12 @@ excerpt: לאייפון X יש מסך שמגיע לכל קצוות המכשיר,
 {% highlight css %}
 
 main {
-  padding-right: constant(safe-area-inset-right);
-  padding-left: constant(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-left: env(safe-area-inset-left);
 }
 
 footer {
-  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 {% endhighlight %}
@@ -90,7 +90,7 @@ footer {
 
 <aside class="post__note">
 <p>iOS 11 משתמשת בפונקציית ה- <code>()constant</code> בכדי לגשת למשתנים שהוגדרו ע״י הדפדפן, אך ב- <a href="https://github.com/w3c/csswg-drafts/issues/1693">CSS Working Group החליטו</a> להשתמש בשם <code>()env</code> לפונקציה בסופו של דבר.</p>
-<p>לכן, על מנת לתמוך באייפון X נכון לעכשיו, יש להשתמש בפונקצייה <code>()constant</code>, אך בעתיד יהיה צורך לשנות את השם ל- <code>()env</code>.</p>
+<p>לכן, על מנת לתמוך באייפון X נכון לעכשיו, יש להשתמש בפונקצייה <code>()env</code>, אך בעתיד יהיה צורך לשנות את השם ל- <code>()env</code>.</p>
 </aside>
 
 # משנים כיוון
@@ -114,8 +114,8 @@ footer {
 
 @supports(padding: max(0px)) {
   main {
-    padding-right: max(12px, constant(safe-area-inset-right));
-    padding-left: max(12px, constant(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-left: max(12px, env(safe-area-inset-left));
   }
 }
 
